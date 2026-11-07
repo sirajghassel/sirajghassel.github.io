@@ -8,7 +8,7 @@
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
   <script>
     try {
       var t = localStorage.getItem("theme");
@@ -26,6 +26,8 @@
     </div>
     <nav id="nav-links">
       <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
       <a href="#projects">Projects</a>
       <a href="#publications">Publications</a>
       <a href="#writing">Writing</a>
@@ -42,39 +44,60 @@
         <div>
           <!-- TODO: replace with your own bio -->
           <p>I'm a data scientist at IBM Consulting, where I build machine learning and AI systems for clients, with a focus on large language models and how to adapt them to real-world tasks through post-training.</p>
+          <p>My research background is in AI for medical imaging, particularly lung ventilation/perfusion (V/Q) scintigraphy for pulmonary embolism. I developed deep learning methods for enhancing low-count images, detecting and segmenting perfusion defects, and building large annotated datasets, work that has led to several journal papers and a patent application.</p>
           <p>Outside of client work, I study mechanistic interpretability: trying to understand how language models represent information and compute their answers, and using that understanding to make models more reliable and easier to steer.</p>
           <p>I'm interested in the gap between what models appear to do and what they actually do internally, and in turning research ideas into tools that work in practice.</p>
           <p class="links">
-            <a href="https://github.com/sirajghassel">GitHub</a>
-            <a href="https://scholar.google.com/citations?hl=en&user=RYh_AkIAAAAJ">Google Scholar</a>
-            <a href="https://www.linkedin.com/in/siraj-ghassel/">LinkedIn</a>
+            <a href="https://github.com/sirajghassel" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://scholar.google.com/citations?hl=en&user=RYh_AkIAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+            <a href="https://www.linkedin.com/in/siraj-ghassel/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             <a href="mailto:siraj.ghassel@gmail.com">Email</a>
           </p>
         </div>
       </div>
     </section>
 
-    <section id="projects">
+    <section id="experience">
       <p class="num">02</p>
+      <h2>Experience</h2>
+      <ul class="rows plain">
+        <li><div><strong>Data Scientist</strong>, IBM Consulting</div></li>
+        <li><div><strong>Research Assistant</strong>, Ottawa Hospital Research Institute</div></li>
+        <li><div><strong>Machine Learning Engineer Intern</strong>, IBM</div></li>
+        <li><div><strong>Software Developer</strong>, Immigration, Refugees and Citizenship Canada</div></li>
+      </ul>
+    </section>
+
+    <section id="education">
+      <p class="num">03</p>
+      <h2>Education</h2>
+      <ul class="edu">
+        <li><span class="edu-dates">2021&ndash;2023</span><div><strong>MSc, Computer Science</strong>, University of Ottawa.<br>Thesis: <i>Artificial Count Enhancement of Lung Scintigraphic Images Using Deep Learning Techniques</i> (nominated for best thesis award).</div></li>
+        <li><span class="edu-dates">2015&ndash;2020</span><div><strong>BSc, Computer Science / Life Sciences (Dual Degree)</strong>, University of Ottawa.</div></li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <p class="num">04</p>
       <h2>Projects</h2>
       <!-- TODO: add projects -->
     </section>
 
     <section id="publications">
-      <p class="num">03</p>
+      <p class="num">05</p>
       <h2>Publications</h2>
-      <p class="meta-line">Also on <a href="https://scholar.google.com/citations?hl=en&amp;user=RYh_AkIAAAAJ">Google Scholar</a>.</p>
+      <p class="meta-line">Also on <a href="https://scholar.google.com/citations?hl=en&amp;user=RYh_AkIAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a>.</p>
       <ul class="pubs">
         <li><span class="year">2026</span><div><i>Artificial count enhancement in lung scintigraphy for acquisition acceleration and pseudo-planar generation.</i> A Jabbarpour, <b>S Ghassel</b>, S Kaviani, J Lang, E Moulton, R Klein. Physics in Medicine &amp; Biology 71(17), 175037.</div></li>
         <li><span class="year">2026</span><div><i>Artificial intelligence-enabled detection of vascular perfusion defects on ventilation/perfusion (V/Q) scintigraphy for pulmonary embolism.</i> A Jabbarpour, E Moulton, S Kaviani, <b>S Ghassel</b>, W Zeng, R Akbarian, et al. Physics in Medicine and Biology.</div></li>
         <li><span class="year">2025</span><div><i>On the construction of a large-scale database of AI-assisted annotating lung ventilation-perfusion scintigraphy for pulmonary embolism (VQ4PEDB).</i> A Jabbarpour, E Moulton, S Kaviani, <b>S Ghassel</b>, W Zeng, R Akbarian, et al. Frontiers in Nuclear Medicine 5, 1632112.</div></li>
-        <li><span class="year">2025</span><div><i>The effect of resizing on the natural appearance of scintigraphic images: an image similarity analysis.</i> <b>S Ghassel</b>, A Jabbarpour, J Lang, E Moulton, R Klein. Frontiers in Nuclear Medicine 4, 1505377.</div></li>
+        <li><span class="year">2025</span><div><i>The effect of resizing on the natural appearance of scintigraphic images: an image similarity analysis.</i> <b>S Ghassel</b>, A Jabbarpour, J Lang, E Moulton, R Klein. Frontiers in Nuclear Medicine 4, 1505377.<br><span class="tag">Paper and patent application (US 18/892,028)</span></div></li>
         <li><span class="year">2023</span><div><i>The past, present, and future role of artificial intelligence in ventilation/perfusion scintigraphy: a systematic review.</i> A Jabbarpour, <b>S Ghassel</b>, J Lang, E Leung, G Le Gal, R Klein, E Moulton. Seminars in Nuclear Medicine 53(6), 752&ndash;765.</div></li>
       </ul>
     </section>
 
     <section id="writing">
-      <p class="num">04</p>
+      <p class="num">06</p>
       <h2>Writing</h2>
       <!-- TODO: replace with real links -->
       <ul class="list">
@@ -84,13 +107,13 @@
     </section>
 
     <section id="contact">
-      <p class="num">05</p>
+      <p class="num">07</p>
       <h2>Contact</h2>
       <p>The best way to reach me is by email: <a href="mailto:siraj.ghassel@gmail.com">siraj.ghassel@gmail.com</a>.</p>
       <p class="links">
-        <a href="https://github.com/sirajghassel">GitHub</a>
-        <a href="https://www.linkedin.com/in/siraj-ghassel/">LinkedIn</a>
-        <a href="https://scholar.google.com/citations?hl=en&user=RYh_AkIAAAAJ">Google Scholar</a>
+        <a href="https://github.com/sirajghassel" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/siraj-ghassel/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://scholar.google.com/citations?hl=en&user=RYh_AkIAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a>
       </p>
     </section>
   </main>
