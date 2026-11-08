@@ -1,5 +1,14 @@
 # sirajghassel.github.io
 
-Personal website. Plain HTML/CSS/JS, no build step.
+Personal academic website of Siraj Ghassel. Plain HTML/CSS/JS, no build step.
 
-Preview locally: `python3 -m http.server` then open http://localhost:8000.
+## Sections
+
+About, Experience, Education, Projects, Publications, Contact. Supports light and dark mode (follows the system setting, with a manual toggle).
+
+## Structure
+
+- `index.html`: page content
+- `style.css`: styles, including both themes
+- `script.js`: theme toggle, mobile menu, footer year
+- `assets/`: photo and favicon
