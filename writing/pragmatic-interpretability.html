@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Risks We Haven't Learned to Measure | Siraj Ghassel</title>
+  <meta name="description" content="A critique of Nanda et al.'s A Pragmatic Vision for Interpretability: proxy tasks discipline the field, but only test risks we already know how to name.">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <script>
+    try {
+      var t = localStorage.getItem("theme");
+      if (t) document.documentElement.dataset.theme = t;
+    } catch (e) {}
+  </script>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="../#about">Siraj Ghassel</a>
+    <div class="nav-right">
+      <button class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    </div>
+    <nav id="nav-links">
+      <a href="../#about">About</a>
+      <a href="../#writing">Writing</a>
+      <a href="../#publications">Publications</a>
+      <a href="../#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <article class="post">
+      <p class="back"><a href="../#writing">&larr; Writing</a></p>
+      <h1>The Risks We Haven&rsquo;t Learned to Measure</h1>
+      <p class="post-meta">Siraj Ghassel &middot; April 2026</p>
+      <p class="note">A response to <a href="https://www.lesswrong.com/posts/StENzDcD3kpfGJssR/a-pragmatic-vision-for-interpretability" target="_blank" rel="noopener noreferrer"><i>A Pragmatic Vision for Interpretability</i></a> by Neel Nanda and colleagues at Google DeepMind. I originally wrote it for my application to the CAISH MARS research program.</p>
+
+      <p>The promise of mechanistic interpretability was to reverse-engineer neural networks from first principles. While this vision produced genuine insights, these rarely transferred to frontier models especially to the systems most relevant for catastrophic risk. In <i>A Pragmatic Vision for Interpretability</i>, Nanda et al. confront this gap by pivoting from ambitious reverse-engineering toward measurable, proxy-based work aimed at AGI safety. As model capabilities grow, empirical safety work becomes increasingly tractable, while the cost of &ldquo;interesting but inert&rdquo; research rises.</p>
+
+      <p>The proxy task framework is the paper&rsquo;s central contribution. Safety research has long suffered from a feedback vacuum: elegant results accumulate without a clear pathway to reducing real-world risk. Proxy tasks impose an external criterion, to force alignment between research outputs and observable model behaviours. When paired with methodological minimalism to escalate complexity only when simple baselines fail. This approach usefully disciplines a field that is prone to over engineered solutions.</p>
+
+      <p>However, the framework has a systematic limitation: proxy tasks can only evaluate behaviours that have already been operationalized. This creates a blind spot for qualitatively novel risks. For example, a model could learn to behave safely under all known evaluations while strategically generalizing in deployment contexts that proxies fail to capture. In this sense, the pragmatic approach improves optimization over a fixed set of metrics without adequate coverage of the underlying risk landscape.</p>
+
+      <p>Ambitious reverse-engineering, despite its inefficiency, serves a complementary role by expanding that landscape. It contributes new conceptual categories, such as ways of describing and recognizing model behaviour that can later be translated into proxy tasks. Without this exploratory work, proxy-based evaluation risks premature convergence: increasing confidence in safety properties defined by an incomplete model of possible failure.</p>
+
+      <p>The appropriate response is to treat the pragmatic pivot as a reallocation rather than a replacement. Most effort should shift toward measurable, safety-relevant work, but a nontrivial fraction must remain exploratory to expand the space of identifiable risks. The two modes are interdependent: pragmatic work depends on exploratory insights to define new proxies, while exploratory work requires empirical grounding to remain connected. The shift is justified, but abandoning the exploratory margin would leave safety research systematically blind to the risks it has not yet learned to measure.</p>
+    </article>
+  </main>
+
+  <footer>&copy; <span id="year"></span> Siraj Ghassel</footer>
+  <script src="../script.js"></script>
+</body>
+</html>

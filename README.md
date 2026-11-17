@@ -4,7 +4,7 @@ Personal academic website of Siraj Ghassel. Plain HTML/CSS/JS, no build step.
 
 ## Sections
 
-About, Experience, Education, Projects, Publications, Contact. Supports light and dark mode (follows the system setting, with a manual toggle).
+About, Experience, Education, Publications, Writing, Contact. Supports light and dark mode (follows the system setting, with a manual toggle).
 
 ## Structure
 

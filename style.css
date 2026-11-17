@@ -157,3 +157,12 @@ footer { text-align: center; padding: 40px 24px; color: var(--muted); font-famil
   .edu-dates { grid-column: 2; grid-row: 1; text-align: right; font-size: 0.78rem; }
     h2 { font-size: 1.6rem; }
 }
+
+/* Writing posts */
+.post { padding-top: 56px; }
+.post h1 { font-family: var(--sans); color: var(--strong); font-size: 2.1rem; line-height: 1.25; letter-spacing: -0.01em; margin: 8px 0 12px; }
+.post .post-meta { font-family: var(--sans); color: var(--muted); font-size: 0.9rem; margin: 0 0 8px; }
+.post .note { color: var(--muted); font-size: 1rem; border-left: 3px solid var(--line); padding-left: 16px; margin: 24px 0 32px; }
+.post p { margin: 0 0 1.2em; }
+.back { font-family: var(--sans); font-size: 0.95rem; font-weight: 500; }
+@media (max-width: 640px) { .post h1 { font-size: 1.7rem; } }
